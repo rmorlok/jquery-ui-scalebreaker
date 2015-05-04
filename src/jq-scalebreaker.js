@@ -159,7 +159,7 @@
               _self.wrapper.off('animationend webkitAnimationEnd');
               this.state = 'shown';
               if (_self.options.broadcastEvents) {
-                return this._triggerEvent("dialogShown." + _self.options.idNamespace, this.wrapper);
+                return _self._triggerEvent("dialogShown." + _self.options.idNamespace, this.wrapper);
               }
             }
           });
@@ -191,7 +191,7 @@
               _self.wrapper.off('animationend webkitAnimationEnd');
               this.state = 'hidden';
               if (_self.options.broadcastEvents) {
-                return this._triggerEvent("dialogHidden." + _self.options.idNamespace, this.wrapper);
+                return _self._triggerEvent("dialogHidden." + _self.options.idNamespace, this.wrapper);
               }
             }
           });

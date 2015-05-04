@@ -174,7 +174,7 @@
             _self.wrapper.off 'animationend webkitAnimationEnd'
             @state = 'shown'
             if _self.options.broadcastEvents
-              @_triggerEvent "dialogShown.#{_self.options.idNamespace}", @wrapper
+              _self._triggerEvent "dialogShown.#{_self.options.idNamespace}", @wrapper
       else
         @state = 'shown'
         if @options.broadcastEvents
@@ -201,7 +201,7 @@
             _self.wrapper.off 'animationend webkitAnimationEnd'
             @state = 'hidden'
             if _self.options.broadcastEvents
-              @_triggerEvent "dialogHidden.#{_self.options.idNamespace}", @wrapper
+              _self._triggerEvent "dialogHidden.#{_self.options.idNamespace}", @wrapper
       # Or just close.
       else if @options.closeOnBackdrop
         _self.wrapper.off "click.#{@options.idNamespace}"
