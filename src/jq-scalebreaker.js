@@ -158,8 +158,8 @@
               _self.wrapper.removeClass(_self.options.idNamespace + "-animate-in");
               _self.wrapper.off('animationend webkitAnimationEnd');
               this.state = 'shown';
-              if (this.options.broadcastEvents) {
-                return this._triggerEvent("dialogShown." + this.options.idNamespace, this.wrapper);
+              if (_self.options.broadcastEvents) {
+                return this._triggerEvent("dialogShown." + _self.options.idNamespace, this.wrapper);
               }
             }
           });
@@ -190,8 +190,8 @@
               _self.wrapper.removeClass(_self.options.idNamespace + "-show");
               _self.wrapper.off('animationend webkitAnimationEnd');
               this.state = 'hidden';
-              if (this.options.broadcastEvents) {
-                return this._triggerEvent("dialogHidden." + this.options.idNamespace, this.wrapper);
+              if (_self.options.broadcastEvents) {
+                return this._triggerEvent("dialogHidden." + _self.options.idNamespace, this.wrapper);
               }
             }
           });
@@ -247,3 +247,5 @@
   })(jQuery);
 
 }).call(this);
+
+//# sourceMappingURL=jq-scalebreaker.js.map
